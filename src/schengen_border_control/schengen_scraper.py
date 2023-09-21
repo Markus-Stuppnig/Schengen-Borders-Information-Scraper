@@ -47,3 +47,4 @@ def get_country(country) -> {}:
             result['Reason'] = data[i * 3 + 2].text
 
     return result
+    

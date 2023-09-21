@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0", "requests>=2.31.0", "beautifulsoup4>=4.12.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Schengen-Borders-Information-Scraper"
+version = "0.0.2"
+authors = [
+  { name="Markus Stuppnig", email="accounts@stuppnig.net" },
+]
+description = "This Python script scrapes information about temporary reintroduction of border control in the Schengen Area from the European Commission's website."
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper"
+"Bug Tracker" = "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper/issues"
