@@ -21,15 +21,15 @@ Run the following command in bash to install this package with [pip](https://pyp
 ### Installing the package
 
 ```bash
-pip install -i https://test.pypi.org/simple/ Schengen-Borders-Information-Scraper
+pip install -i https://test.pypi.org/simple/ Schengen_Borders_Information_Scraper
 ```
 
-After installing the library, you can import the schengen_scraper module into your Python script and utilize the provided functions.
+After installing the library, you can import the scraper module into your Python script and utilize the provided functions.
 
 ### Importing the Module
 
 ```python
-import schengen_scraper
+import Schengen_Borders_Information_Scraper.scraper as scraper
 ```
 
 ### Available Functions
@@ -39,7 +39,7 @@ import schengen_scraper
 This function retrieves a list of countries that have temporary border control.
 
 ```python
-countries = schengen_scraper.get_countries()
+countries = scraper.get_countries()
 ```
 
 `get_temporary_borders()`
@@ -47,7 +47,7 @@ countries = schengen_scraper.get_countries()
 Get information about temporary border controls for all countries. It returns a dictionary with country names as keys and information about the start date, end date, and reason for the border control as values.
 
 ```python
-borders = schengen_scraper.get_temporary_borders()
+borders = scraper.get_temporary_borders()
 ```
 
 `get_country(country)`
@@ -55,16 +55,16 @@ borders = schengen_scraper.get_temporary_borders()
 Retrieve information about the temporary border control of a specific country. It returns a dictionary with information about the start date, end date, and reason for the border control.
 
 ```python
-country_info = schengen_scraper.get_country("Austria")
+country_info = scraper.get_country("Austria")
 ```
 
 ### Example Usage
 
 ```python
-import schengen_scraper
+import Schengen_Borders_Information_Scraper.scraper as scraper
 
 # Get a list of countries with temporary border control
-countries = schengen_scraper.get_countries()
+countries = scraper.get_countries()
 print(countries)
 
 if 'Austria' in countries:
@@ -90,8 +90,8 @@ Before you begin, make sure you have the following:
 First, clone the project repository to your local machine:
 
 ```bash
-git clone git@github.com:Markus-Stuppnig/Schengen-Borders-Information-Scraper.git
-cd Schengen-Borders-Information-Scraper
+git clone git@github.com:Markus-Stuppnig/Schengen_Borders_Information_Scraper.git
+cd Schengen_Borders_Information_Scraper
 ```
 
 #### Create a Virtual Environment

@@ -1,10 +1,14 @@
+#[build-system]
+#requires = ["setuptools>=61.0", "requests>=2.31.0", "beautifulsoup4>=4.12.2"]
+#build-backend = "setuptools.build_meta"
+
 [build-system]
-requires = ["setuptools>=61.0", "requests>=2.31.0", "beautifulsoup4>=4.12.2"]
-build-backend = "setuptools.build_meta"
+requires = ["hatchling", "requests", "beautifulsoup4"]
+build-backend = "hatchling.build"
 
 [project]
-name = "Schengen-Borders-Information-Scraper"
-version = "0.0.2"
+name = "Schengen_Borders_Information_Scraper"
+version = "0.0.1"
 authors = [
   { name="Markus Stuppnig", email="accounts@stuppnig.net" },
 ]
@@ -16,7 +20,16 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+  'requests>=2.31.0',
+  'beautifulsoup4>=4.12.2',
+]
 
 [project.urls]
 "Homepage" = "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper"
 "Bug Tracker" = "https://github.com/Markus-Stuppnig/Schengen-Borders-Information-Scraper/issues"
+
+[tool.pytest.ini_options]
+addopts = [
+    "--import-mode=importlib",
+]
