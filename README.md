@@ -2,6 +2,10 @@
 
 This Python script scrapes information about temporary reintroduction of border control in the Schengen Area from the [European Commission's website](https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en).
 
+You can explore this project by visiting the following URL on the official PyPI website:
+[Schengen Borders Information Scraper on PyPI](https://pypi.org/project/Schengen-Borders-Information-Scraper/)
+
+
 ## Requirements
 
 * Python 3.x
