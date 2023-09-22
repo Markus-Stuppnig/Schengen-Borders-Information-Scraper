@@ -21,7 +21,7 @@ Run the following command in bash to install this package with [pip](https://pyp
 ### Installing the package
 
 ```bash
-pip install -i https://test.pypi.org/simple/ Schengen_Borders_Information_Scraper
+pip install Schengen_Borders_Information_Scraper
 ```
 
 After installing the library, you can import the scraper module into your Python script and utilize the provided functions.
